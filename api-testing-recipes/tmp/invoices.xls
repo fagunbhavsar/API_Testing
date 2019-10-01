@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <ss:Styles>
+    <Style ss:ID="s22">
+      <Font ss:Size="13" />
+      <NumberFormat ss:Format="yyyy\-mm\-dd"/>
+    </Style>
+    <Style ss:ID="s1"><Font ss:Bold="1"/></Style>    
+    <Style ss:ID="s2"><Font ss:Size="13" /></Style>    
+    <Style ss:ID="s4">
+     <Borders>
+      <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+      <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+      <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+     </Borders>
+     <Font x:Family="Swiss" ss:Size="14"  ss:Bold="1"/>
+     <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+    </Style>    
+    <Style ss:ID="s8">
+     <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+     <Font x:Family="Swiss" ss:Size="24" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="s23" ss:Name="Currency">
+      <Font ss:Size="13" />
+      <NumberFormat ss:Format="Currency"/>
+    </Style>
+  </ss:Styles>
+  <Worksheet ss:Name="Sheet1">
+    <Table >
+      <Column ss:AutoFitWidth="0" ss:Width="82"/>
+      <Column ss:AutoFitWidth="0" ss:Width="90"/>
+      <Column ss:AutoFitWidth="0" ss:Width="148"/>
+      <Column ss:AutoFitWidth="0" ss:Width="90"/>
+      <Column ss:AutoFitWidth="0" ss:Width="90"/>
+      <Row ss:Height="30">
+        <Cell ss:MergeAcross="5" ss:StyleID="s8"><Data ss:Type="String">Invoices Report</Data></Cell>
+      </Row>
+      
+      <Row ss:Height="24"  ss:StyleID="s1">
+        <Cell ss:MergeAcross="2" ss:StyleID="s2" ><Data ss:Type="String">2016-07-25 to 2016-07-31</Data></Cell>
+        <Cell ss:StyleID="s2" ><Data ss:Type="String">10 Invoices</Data></Cell>
+        <Cell ss:MergeAcross="2" ss:StyleID="s2"><Data ss:Type="String">Total Amount: $16812</Data></Cell>          
+      </Row>
+      
+      <Row ss:Height="20">
+        <Cell ss:StyleID="s4"><Data ss:Type="String">Invoice Ref</Data></Cell>
+        <Cell ss:StyleID="s4"><Data ss:Type="String">Invoice Date</Data></Cell>
+        <Cell ss:StyleID="s4"><Data ss:Type="String">Client</Data></Cell>
+        <Cell ss:StyleID="s4"><Data ss:Type="String">Amount</Data></Cell>
+        <Cell ss:StyleID="s4"><Data ss:Type="String">Comments</Data></Cell>
+      </Row>
+      
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1000</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-30</Data></Cell>
+        <Cell><Data ss:Type="String">Leilani Hackett MD</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">2903</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1001</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-25</Data></Cell>
+        <Cell><Data ss:Type="String">Ethyl Parisian</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">1980</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1002</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-26</Data></Cell>
+        <Cell><Data ss:Type="String">Elise Willms DDS</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">1640</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1003</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-31</Data></Cell>
+        <Cell><Data ss:Type="String">Nathan Connelly</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">603</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1004</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-31</Data></Cell>
+        <Cell><Data ss:Type="String">Thad Turcotte</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">696</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1005</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-31</Data></Cell>
+        <Cell><Data ss:Type="String">Wade Ryan</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">69</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1006</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-27</Data></Cell>
+        <Cell><Data ss:Type="String">Felipa Gusikowski</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">1968</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1007</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-28</Data></Cell>
+        <Cell><Data ss:Type="String">Madie Abshire</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">2094</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1008</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-29</Data></Cell>
+        <Cell><Data ss:Type="String">Celia Kub</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">2632</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+      <Row  ss:StyleID="s2" ss:Height="18"  >
+        <Cell><Data ss:Type="Number">1009</Data></Cell>
+        <Cell ss:StyleID="s22"><Data ss:Type="DateTime">2016-07-25</Data></Cell>
+        <Cell><Data ss:Type="String">Christ Gibson</Data></Cell>
+        <Cell ss:StyleID="s23"><Data ss:Type="Number">2227</Data></Cell>
+        <Cell><Data ss:Type="String"></Data></Cell>
+      </Row>   
+     
+
+    </Table>
+  </Worksheet>
+</Workbook>

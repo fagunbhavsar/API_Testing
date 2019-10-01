@@ -1,0 +1,12 @@
+{
+  "staff": [
+    {
+      "firstName": "John",
+      "lastName": "Daw"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Jones"
+    }
+  ]
+}

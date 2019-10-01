@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="US-ASCII"?>
+<workspace>
+  <project_name>API-Testing</project_name>
+  <project_file>/Users/zhimin/work/books/APITestingRecipes-Ruby/recipes/api-testing-recipes.tpr</project_file>
+  <opened_files>
+    <entry name="$PROJECT_DIR$/spec/ch04_parse_response_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch10_combination_data_driven_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch10_combination_email_mailcatcher_spec.rb"/>
+  </opened_files>
+  <recent_files>
+    <entry name="$PROJECT_DIR$/spec/ch04_parse_response_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch09_html_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch06_download_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/selected_scripts_spec.rb"/>
+    <entry name="$PROJECT_DIR$/mail_catcher_helper.rb"/>
+    <entry name="$PROJECT_DIR$/spec/fetch_json_spec.rb"/>
+    <entry name="$PROJECT_DIR$/pages/sign_up_page.rb"/>
+    <entry name="$PROJECT_DIR$/pages/customer_login_page.rb"/>
+    <entry name="$PROJECT_DIR$/pages/abstract_page.rb"/>
+    <entry name="$PROJECT_DIR$/pages/customer_login_page.erb"/>
+    <entry name="$PROJECT_DIR$/spec/mail_catcher_helper.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch08_generate_data_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch10_combination_email_mailcatcher_spec.rb"/>
+    <entry name="$PROJECT_DIR$/spec/ch10_combination_data_driven_spec.rb"/>
+    <entry name="$PROJECT_DIR$/testdata/template.xlsx.erb"/>
+  </recent_files>
+  <test_suites>
+  </test_suites>
+</workspace>

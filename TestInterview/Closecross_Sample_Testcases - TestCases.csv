@@ -1,0 +1,82 @@
+Sr No,User story,High level scenario,Low level scenario,Happy/Non-Happy Path,Steps,Test Cycle 1,Bugs,Test cycle 2,Bugs,Test cycel 3,Bugs
+1,New Signup,Sign up with valid account details and relevant selected currency,"New user sign-up with all valid details:
+- Username
+- Password
+- Default selected currency",Happy,,,,,,,
+,,,"New user sign-up with all valid details:
+- Username
+- Password
+- Any other currency from dropdown",Happy,,,,,,,
+,,,"New user sign-up with all following details:
+- Username (invalid)
+- Password
+- Any other currency from dropdown",Non-Happy,,,,,,,
+,,,"New user sign-up with all following details:
+- Username
+- Password (Not as per password policy)
+- Any other currency from dropdown",Non-Happy,,,,,,,
+,,,"New user sign-up with all details:
+- Username (Invalid)
+- Password
+- Default selected currency",Non-Happy,,,,,,,
+,,,"New user sign-up with all details:
+- Username
+- Password (Not as per password policy)
+- Default selected currency",Non-Happy,,,,,,,
+,,,"New user sign-up with all following details:
+- Username
+- Password
+- Without selecting any currency",Non-Happy,,,,,,,
+,,,"New user sign-up with all following details:
+- Username
+- Password
+- Default selected currency
+
+Uncheck terms, conditions and privacy policy checkbox",Non-Happy,,,,,,,
+,,,Try to sign-up new user keeping username blank and having all other details correctly,Non-Happy,,,,,,,
+,,,Try to sign-up new user keeping password blank and having all other details correctly,Non-Happy,,,,,,,
+,,,,,,,,,,,
+2,Login into app,Login in with given username and password,Login in with correct username and password,Happy,,,,,,,
+,,,Login in with correct username but incorrect password,Non-Happy,,,,,,,
+,,,Login in with incorrect usernamd and correct password,Non-Happy,,,,,,,
+,,,Login in with correct username and blank password,Non-Happy,,,,,,,
+,,,Login in with blank username and correct password,Non-Happy,,,,,,,
+,,,,,,,,,,,
+3,Password recovery,Password recovery link for forgotten password,Recover the password when user has forgotten the current one by entering correct email address,Happy,,,,,,,
+,,,Recover the password when user has forgotten the current one by entering invalid email address,Non-happy,,,,,,,
+,,,Recover the password when user has forgotten the current one by entering different email address (different from the email address which was earlier used for sign-up),Non-happy,,,,,,,
+,,,Recover the password and set previous password as new one,Non-happy,,,,,,,
+,,,Recover the password and set weak password as the new one,Non-happy,,,,,,,
+,,,Recover the password and set blank as new password,Non-happy,,,,,,,
+,,,Expire recovery password link and try to reset the password,Non-happy,,,,,,,
+,,,,,,,,,,,
+4,Dashboard --> Open trade view,Dashboard --> Open trade --> View open trade,View DIJA today/Gold 1-hour; make sure the selected view should be highlighted,Happy,,,,,,,
+,,Open trade --> View open trade --> committ button,After opening the trade details --> if it is not closed; commit button should be visible,Happy,,,,,,,
+,,Open trade --> View open trade --> committ button --> Event details,"Once the commit is done --> navigation happens to Event details with pop-up --> once the pop-up is clicked ""Ok""--> it shows event details --> clicking on back button --> Shows the pop-up again",Non-happy,,,,,,,
+,,Open trade --> View open trade --> committ button --> cancel button,,,,,,,,,
+,,Dashboard --> View all open trade --> repeat above steps,,,,,,,,,
+,,,,,,,,,,,
+5,Dashboard --> Largest VPFs,Dashboard --> Largest VPFs view --> click on VPF visible on dashboard,View VPF details,Happy,,,,,,,
+,,,Cancel commit,Non-happy,,,,,,,
+,,,Validate event details,,,,,,,,
+,,,Click on committ,Happy,,,,,,,
+,,,Validate event details,Happy,,,,,,,
+,,Repeat above scenario after clicking view all --> selecting one of the record to commit,,,,,,,,,
+,,,,,,,,,,,
+6,Dashboard --> Highest Betas,Dashboard --> Highest Betas view --> click on Highest beta record visible on dashboard,View Highest Betas details,Happy,,,,,,,
+,,,Cancel commit,Non-happy,,,,,,,
+,,,Validate event details,,,,,,,,
+,,,Click on committ,Happy,,,,,,,
+,,,Validate event details,Happy,,,,,,,
+,,Repeat above scenario after clicking view all --> selecting one of the record to commit,,,,,,,,,
+,,,,,,,,,,,
+7,Dashboard --> Opening soon,Dashboard --> Opening soon --> click on Opening soon visible record on dashboard,,,,,,,,,
+,,Click on notify me,,,,,,,,,
+,,Click on pre-commit,,,,,,,,,
+,,Repeat above scenario after clicking view all ,,,,,,,,,
+,,,,,,,,,,,
+8,Side navigation,Repeat all scnearios from 4-7 from the left side navigation menu,,,,,,,,,
+,,,,,,,,,,,
+9,View messages/notifications,,,,,,,,,,
+,,,,,,,,,,,
+10,Download receipts,,,,,,,,,,

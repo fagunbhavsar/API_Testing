@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "388e226e-e9e2-4fb4-90e0-66d886fcfa35",
+		"name": "CloseCross_API_Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get crypto listing - USD - latest data with 10 listings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "start",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "convert",
+							"value": "USD",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=10&convert=USD",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"listings",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "convert",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cryptocurrency metadata",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?id=1,2,10",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"info"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1,2,10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get crypto listing - EUR - latest data with 100 listings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c43e88d-764a-44d2-bc70-a01950536156",
+						"exec": [
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=100&convert=EUR",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"listings",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "convert",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get CoinMarket Cap ID Map (Incliding non active listing)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?start=1&limit=100",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"map"
+					],
+					"query": [
+						{
+							"key": "listing_status",
+							"value": "active",
+							"disabled": true
+						},
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get CoinMarket Cap ID Map (Only active listing)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?start=1&limit=100&listing_status=active",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"map"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "listing_status",
+							"value": "active"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cryptocurrency latest quotes - (Converted to ETH)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH,XRP,BCH,EOS,LTC,XLM&convert=ETH",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"quotes",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC,ETH,XRP,BCH,EOS,LTC,XLM"
+						},
+						{
+							"key": "convert",
+							"value": "ETH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cryptocurrency latest quotes - (Converted to BTC)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH,XRP,BCH,EOS,LTC,XLM&convert=BTC",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"quotes",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC,ETH,XRP,BCH,EOS,LTC,XLM"
+						},
+						{
+							"key": "convert",
+							"value": "BTC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cryptocurrency latest quotes - (Converted to EUR)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "7c88ab8a-0d44-4a46-8ea5-3ee1c8365061",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-CMC_PRO_API_KEY",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=BTC,ETH,XRP,BCH,EOS,LTC,XLM&convert=EUR",
+					"protocol": "https",
+					"host": [
+						"pro-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"cryptocurrency",
+						"quotes",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC,ETH,XRP,BCH,EOS,LTC,XLM"
+						},
+						{
+							"key": "convert",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
